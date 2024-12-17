@@ -1,0 +1,21 @@
+<?php
+// Mostrar el nombre del host
+$hostname = gethostname();
+echo "<h1>Host: $hostname</h1>";
+?>
+
+<!-- templates/index.html -->
+
+<html>
+  <head>
+    <title>FastAPI WebSocket Chat</title>
+    <script src="/static/script.js"></script>
+  </head>
+  <body>
+    <h1>FastAPI WebSocket Chat</h1>
+    <textarea id="messages" cols="100" rows="20" readonly></textarea
+    ><br /><br />
+    <input type="text" id="message_input" placeholder="Escribe un mensaje..." />
+    <button onclick="sendMessage()">Enviar</button>
+  </body>
+</html>
